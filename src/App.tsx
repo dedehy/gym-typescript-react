@@ -4,10 +4,8 @@ import Home from "@/scenes/home";
 import Benefits from "@/scenes/benefits";
 import OurClasses from "@/scenes/ourClasses";
 import ContactUs from "@/scenes/contactUs";
-import footer from "@/scenes/footer";
+import Footer from "@/scenes/footer";
 import { SelectedPage } from "@/shared/types";
-import { OurClassess } from "@/scenes/";
-import Footer from "./scenes/footer/index";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(
@@ -42,7 +40,7 @@ function App() {
       <Benefits setSelectedPage={setSelectedPage} />
       <OurClasses setSelectedPage={setSelectedPage} />
       <ContactUs setSelectedPage={setSelectedPage} />
-      <Footer setSelectedPage={setSelectedPage} />
+      <Footer />
     </div>
   );
 }
